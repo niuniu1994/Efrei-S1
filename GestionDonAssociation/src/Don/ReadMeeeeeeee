@@ -1,0 +1,20 @@
+1, Par rapport la module la gestion de stock, je cree des entrepot sous base de Linkedlist a fin de stocker
+    des dons. Parceque , au niveau de complexite de temps est O(1) pour l'action de modifier.Bien que la list
+    dans laquelle soit plus efficace a rechercher un object dans le cas que on connait son indice. Poutant, j'imagine que
+    noremalement on connait pas l'indice dans la pratique, par contre a la base on excute toujours la fonction de rechercher
+    a fin de trouver un don.
+
+2, je attribue la fonction de "donner" ou "vendre" aux class  Association , DepotVent et Gardemeubleu au lieu
+   de class Don. parceque, je pense qu'il est plus facile les gerer sous ce mode la. par exemple, on n'a pas de
+   droit de vendre les dons dans gardermeuble et association, pareil on n'a non plus le droit donner les
+   dons dans depotvent. De plus, il y un autre avantage, vu que tous les depotvent possedent un montant et il ya
+   pluisers depotvente et ce mode facilite la gestion de ce montant car on n'a pas pas besoin de chercher dans quelle
+   depotvent ou le don est depose et son montant correspont;
+
+3, j'ai cree deux archives , archiveEntree et archiveSortie; Et pour les deux archive je utilise le patron de singleton
+   car archive ne existe que une;
+
+4, dans le module recherche et les class de entrepot, je cree une fonction rechercherParEtiquette().
+
+5, je utilise Linkedlist pour deposer les dons,
+

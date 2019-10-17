@@ -1,0 +1,1 @@
+Cusiniere{nombre de plaque =3, puissance =2000w};cusiniere;Legrand;0178766567;rue Pompidou Paris;not bad;Courty;Stocke;Depot-Vente;99.0;09/09/2019;null

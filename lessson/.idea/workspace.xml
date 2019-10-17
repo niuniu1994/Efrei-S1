@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fd5ef011-95d6-4b2e-a57f-50ba5a3a4405" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="lessson" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Pivr3oyWWN0ZWxqaWuEiAlPzRM" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.NumArray2">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="SegmentTree" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="MaxHeap" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetCode.Main" />
+      <module name="MaxHeap" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NumArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetCode.NumArray" />
+      <module name="SegmentTree" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetCode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NumArray2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetCode.NumArray2" />
+      <module name="SegmentTree" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetCode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.Solution" />
+      <module name="Map" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.NumArray2" />
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.NumArray" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Solution" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fd5ef011-95d6-4b2e-a57f-50ba5a3a4405" name="Default Changelist" comment="" />
+      <created>1566369926477</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1566369926477</updated>
+      <workItem from="1566369927736" duration="456000" />
+      <workItem from="1566370452065" duration="145000" />
+      <workItem from="1566370617313" duration="107000" />
+      <workItem from="1566370831380" duration="42000" />
+      <workItem from="1566370897254" duration="43000" />
+      <workItem from="1566371004990" duration="24669000" />
+      <workItem from="1566683458176" duration="5167000" />
+      <workItem from="1566763504044" duration="16000" />
+      <workItem from="1566935425910" duration="23784000" />
+      <workItem from="1567453336681" duration="3349000" />
+      <workItem from="1567502485880" duration="535000" />
+      <workItem from="1567539066091" duration="2807000" />
+      <workItem from="1567626670454" duration="5101000" />
+      <workItem from="1567663964737" duration="11000" />
+      <workItem from="1567938895890" duration="5568000" />
+      <workItem from="1568012904571" duration="4000" />
+      <workItem from="1568020814088" duration="982000" />
+      <workItem from="1568315148062" duration="5776000" />
+      <workItem from="1568929172809" duration="23703000" />
+      <workItem from="1569876219931" duration="4878000" />
+      <workItem from="1570048413782" duration="2000" />
+      <workItem from="1570050633179" duration="844000" />
+      <workItem from="1570316310586" duration="723000" />
+      <workItem from="1570382943244" duration="548000" />
+      <workItem from="1570475042785" duration="2076000" />
+      <workItem from="1570561645725" duration="386000" />
+      <workItem from="1570562738458" duration="3000" />
+      <workItem from="1570562752595" duration="2289000" />
+      <workItem from="1570658024886" duration="1308000" />
+      <workItem from="1570660640892" duration="175000" />
+      <workItem from="1570737647059" duration="2733000" />
+      <workItem from="1570823738543" duration="2958000" />
+      <workItem from="1570901037641" duration="4679000" />
+      <workItem from="1571162215848" duration="6649000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

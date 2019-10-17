@@ -1,0 +1,16 @@
+Partie1
+
+1.les methoeds de affchage et lire le graphe est facile a compredre.
+2.pour calculer le rang , je utilise l'algo que le prof nous a donne
+3,pour detecter le circuit, je uitilise le premier methode(l'algo warshall) c-t-d d'abord trouver la matric
+  fermeture transitive et verifier si il y a 1 ou pas sur son diagonale
+
+
+Partie2
+
+1, je transforme la matrice d'adjacence et la matrice de valeur vers les list;
+2, je fait le tri topologique pour gagner les sommet sous ordre, et je le realise par dfs
+
+    presentation pour ce algo  https://www.geeksforgeeks.org/topological-sorting/
+
+3, apres je trouve les date plus tot et plus tard en uitilisant les sommet apres le tri.

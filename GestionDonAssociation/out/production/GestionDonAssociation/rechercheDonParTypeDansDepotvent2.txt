@@ -1,0 +1,2 @@
+Cusiniere{nombre de plaque =3, puissance =300w};cusiniere;Legrand;0178766567;rue Pompidou Paris;not bad;Courty;Stocke;Depot-Vente;2.0;09/09/2019;null
+Cusiniere{nombre de plaque =3, puissance =1000w};cusiniere;Legrand;0178766567;rue Pompidou Paris;not bad;Courty;Stocke;Depot-Vente;3.0;09/09/2019;null
