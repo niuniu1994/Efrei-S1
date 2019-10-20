@@ -31,9 +31,8 @@ public class Trie {
             Character c = word.charAt(i);
             if(!cur.next.containsKey(c)){
                 cur.next.put(c,new Node());
-            }else {
-                cur = cur.next.get(c);
             }
+            cur = cur.next.get(c);
         }
 
         if(cur.isWord == false){
@@ -41,7 +40,6 @@ public class Trie {
             cur.isWord = true;
         }
     }
-
      */
 
     public void add(String word){
@@ -49,11 +47,10 @@ public class Trie {
         add(word,root,l,0);
     }
 
-
     private void add(String word,Node cur,int l,int c){
         if(c == l){
             if(!cur.isWord){
-                cur.isWord =true;
+                cur.isWord = true;
                 size ++;
             }
             return;
@@ -61,9 +58,40 @@ public class Trie {
 
         if(!cur.next.containsKey(word.charAt(c)))
             cur.next.put(word.charAt(c),new Node());
-        add(word,cur.next.get(word.charAt(c)),l,c ++);
+        add(word,cur.next.get(word.charAt(c)),l,c +=1);
 
     }
+
+    public Boolean contains(String word){
+        return contains(word,root,word.length(),0);
+    }
+
+    private Boolean contains(String word, Node cur,int l,int c){
+        if(l == c){
+            return cur.isWord;
+        }
+
+        if(cur.next.containsKey(word.charAt(c)))
+            return contains(word,cur.next.get(word.charAt(c)), l, c + 1);
+        else return false;
+    }
+
+    public Boolean prefixContains(String prefix){
+        return prefixContains(prefix, root, prefix.length(),0);
+    }
+
+    private Boolean prefixContains(String prefix, Node cur,int l, int c){
+        if(l == c){
+            return true;
+        }
+
+        if(cur.next.containsKey(prefix.charAt(c))){
+            return prefixContains(prefix,cur.next.get(prefix.charAt(c)), l, c + 1);
+        }
+
+        return false;
+    }
+
     public int getSize() {
         return size;
     }

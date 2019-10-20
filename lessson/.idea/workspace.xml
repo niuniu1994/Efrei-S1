@@ -53,17 +53,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.NumArray2">
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.MapSum">
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="SegmentTree" />
+      <module name="Trie" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="MaxHeap" />
+      <module name="Set" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -81,12 +81,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NumArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetCode.NumArray" />
-      <module name="SegmentTree" />
+    <configuration name="MapSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.MapSum" />
+      <module name="Trie" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetCode.*" />
+          <option name="PATTERN" value="leetcode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,9 +107,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.Solution" />
-      <module name="Map" />
+    <configuration name="WordDictionary" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.WordDictionary" />
+      <module name="Trie" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="leetcode.*" />
@@ -122,11 +122,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MapSum" />
+        <item itemvalue="Application.WordDictionary" />
+        <item itemvalue="Application.Main (2)" />
+        <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.NumArray2" />
-        <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.NumArray" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Solution" />
       </list>
     </recent_temporary>
   </component>
@@ -174,10 +174,23 @@
       <workItem from="1570823738543" duration="2958000" />
       <workItem from="1570901037641" duration="4679000" />
       <workItem from="1571162215848" duration="6649000" />
+      <workItem from="1571347202482" duration="12394000" />
+      <workItem from="1571603017131" duration="215000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Trie/src/leetcode/MapSum.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
