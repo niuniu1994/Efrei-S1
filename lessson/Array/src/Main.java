@@ -1,6 +1,6 @@
 
 public class Main {
-
+	/*
 	public static void main(String[] args) {
 	
 		Array<Integer> arr = new Array();
@@ -9,11 +9,10 @@ public class Main {
 		}
 		arr.add(2, 200);
 		arr.addLast(400);
-		
-
-		
 		System.out.println(arr);
-
 	}
-
+	 */
+	public static void main(String[] args) {
+		int[] a = {1,2,3};
+	}
 }

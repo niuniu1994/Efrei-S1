@@ -15,12 +15,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1Pivr3oyWWN0ZWxqaWuEiAlPzRM" />
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -53,7 +55,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MapSum">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="UnionFind" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Trie" />
@@ -61,22 +70,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="Set" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetCode.Main" />
-      <module name="MaxHeap" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value=".*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="AVL" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -87,19 +83,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="leetcode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NumArray2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetCode.NumArray2" />
-      <module name="SegmentTree" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetCode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,11 +105,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.MapSum" />
         <item itemvalue="Application.WordDictionary" />
         <item itemvalue="Application.Main (2)" />
-        <item itemvalue="Application.Main (3)" />
-        <item itemvalue="Application.NumArray2" />
       </list>
     </recent_temporary>
   </component>
@@ -176,6 +159,16 @@
       <workItem from="1571162215848" duration="6649000" />
       <workItem from="1571347202482" duration="12394000" />
       <workItem from="1571603017131" duration="215000" />
+      <workItem from="1571775392063" duration="617000" />
+      <workItem from="1572340741932" duration="586000" />
+      <workItem from="1572342523491" duration="686000" />
+      <workItem from="1572379945244" duration="113000" />
+      <workItem from="1572428234129" duration="162000" />
+      <workItem from="1572430635451" duration="4960000" />
+      <workItem from="1572519161531" duration="136000" />
+      <workItem from="1572519929224" duration="7109000" />
+      <workItem from="1572802970953" duration="4493000" />
+      <workItem from="1573387009371" duration="10188000" />
     </task>
     <servers />
   </component>

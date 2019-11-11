@@ -85,6 +85,7 @@ public class BSTMap<K extends Comparable<K> , V> implements Map<K, V> {
         }
         else {
             if (node.left == null && node.right == null) {
+                size--;
                 return null;
             } else if (node.left == null) {
                 Node cur = node.right;
