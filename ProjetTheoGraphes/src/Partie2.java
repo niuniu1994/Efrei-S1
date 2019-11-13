@@ -1,17 +1,14 @@
-import javax.print.DocFlavor;
 import java.util.*;
 
 public class Partie2 {
-    public Partie1 p;
+    private Partie1 p;
     int[][] matAdj;
     String[][] matVal;
     int n;
     private Map<Integer, LinkedList<Integer>> adj;
     private Map<Integer, LinkedList<Integer>> val;
 
-    public Partie2() {
-        p = new Partie1();
-    }
+    public Partie2() { p = new Partie1(); }
 
     public void LireGraphe(String fileName) {
         p.LireGraphe(fileName);
@@ -29,7 +26,7 @@ public class Partie2 {
     }
 
     // on transformer la matrice d'adjacence et valeur vers la list d'adjacence et valeur
-    public void MatriceVersList() {
+    private void MatriceVersList() {
         adj = new TreeMap<>();
         val = new TreeMap<>();
 

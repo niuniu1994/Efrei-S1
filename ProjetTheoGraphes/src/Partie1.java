@@ -155,7 +155,6 @@ public class Partie1 {
     }
 
     public String Rang() {
-
         StringBuilder res = new StringBuilder();
         res.append("Calcul des rangs\n");
         res.append("Méthode d’élimination des points d’entrée\n");
@@ -163,11 +162,13 @@ public class Partie1 {
         //vu que on a besoin de stocker les sommets er leur demi-degres correspontants
         // (deux dimension et le nombre d'element de la premiere dimension est fix
         // par contre ce qui pour la deuxieme dimension n'est pas sur)
-        //je les mets dan map
+        //je les mets dans map
         HashMap<Integer, ArrayList<Integer>> s = new HashMap<>();
         int d[] = new int[n];
         int k = 0;
         ArrayList<Integer> a = new ArrayList<>();
+
+        //pour gagner demi-degere
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 d[i] += maAdj[j][i];
@@ -185,9 +186,11 @@ public class Partie1 {
             res.append("Rang Courant = " + k + "\n");
             res.append("Point d'entree : \n");
             try {
+                int somme = 0;
+                //si il y un circuit, on rencontre forcement s.get(k) = vide avant k arrive au maximal
+                //Donc "for (int sommet : s.get(k))" engendre surment une NullPointerException.
                 for (int sommet : s.get(k)) {
                     res.append(sommet + " ");
-                    int somme = 0;
                     for (int j = 0; j < n; j++) {
                         if (maAdj[sommet][j] == 1) {
                             d[j] -= 1;
@@ -198,6 +201,7 @@ public class Partie1 {
                             somme++;
                         }
                     }
+
                     // en cas que il y a plus de sommet
                     if (somme == 0) {
                         res.append("Graphe vide\n");
@@ -213,8 +217,8 @@ public class Partie1 {
                 }
                 res.append("\n");
                 k++;
-            } catch (Exception e) {
-                System.out.println("il exist au moin un circut dan le graphe");
+            } catch (NullPointerException e) {
+                return  new String("il exist au moin un circut dan le graphe\n");
             }
         }
 
@@ -238,17 +242,17 @@ public class Partie1 {
             }
         }
         res.append("Detection de circuit\n");
-        res.append("Methode1 : Juger par la matice de transitive ferme\n");
+        res.append("Methode1 : Juger par la matrice de transitive ferme\n");
         res.append(AffichageMatriceAdj(fer));
 
         for (int i = 0; i < n; i++) {
             if (fer[i][i] == 1) {
-                res.append("Le graphe contient au mois un circuit");
+                res.append("Le graphe contient au mois un circuit\n");
                 return res.toString();
             }
         }
 
-        res.append("Le graphe ne contient pas de circuit");
+        res.append("Le graphe ne contient pas de circuit\n");
         return res.toString();
 
     }

@@ -2,29 +2,20 @@ import java.util.Stack;
 
 public class Main {
     public static void main(String[] args) {
-        Partie1 partie1 = new Partie1();
-        Partie2 partie2 = new Partie2();
-        partie1.LireGraphe("src/tt.txt");
-        partie2.LireGraphe("src/file.txt");
-        System.out.println(partie1.AffichageMatriceAdj());
-        System.out.println(partie1.Rang());
-        /*
-        int [] a = partie2.Plustard();
-        int [] b = partie2.Plustot();
-        int [] c = partie2.marge();
-        for(int i : c){
+        Partie1 p1 = new Partie1();
+        Partie2 p2 = new Partie2();
+        p2.LireGraphe("src/graphe/g5.txt");
+        //System.out.println(p2.AffichageMatriceAdj());
+        int[] calTot = p2.Plustot();
+        int[] calTard = p2.Plustard();
+
+        for (int i : calTot){
             System.out.print(i + " ");
         }
-         */
-
-        //partie1.LireGraphe("src/file.txt");
-        //System.out.println(partie1);
-
-        // System.out.println(partie1.AffichageMatriceAdj());
-        //System.out.println(partie1.AffichageMatriceValeur());
-        // System.out.println(partie1.DecCircut());
-        //System.out.println(partie1.Rang());
-
+        System.out.println();
+        for (int i :calTard){
+            System.out.print(i + " ");
+        }
 
     }
 }
