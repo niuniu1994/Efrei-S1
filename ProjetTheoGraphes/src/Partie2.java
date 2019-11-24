@@ -6,9 +6,11 @@ public class Partie2 {
     String[][] matVal;
     int n;
     private Map<Integer, LinkedList<Integer>> adj;
-    private Map<Integer, LinkedList<Integer>> val;
+    private Map<Integer, Integer> val;// je remplace LinkedList<Integer> a Integer parce que pour un sommet dans graphe d'ordonnacemant tout ses valeu sont identique;
 
-    public Partie2() { p = new Partie1(); }
+    public Partie2() {
+        p = new Partie1();
+    }
 
     public void LireGraphe(String fileName) {
         p.LireGraphe(fileName);
@@ -32,13 +34,11 @@ public class Partie2 {
 
         for (int i = 0; i < n; i++) {
             LinkedList<Integer> arr1 = new LinkedList<>();
-            LinkedList<Integer> arr2 = new LinkedList<>();
             for (int j = 0; j < n; j++) {
                 if (matAdj[i][j] == 1) {
                     arr1.add(j);
-                    arr2.add(Integer.valueOf(matVal[i][j]));
                     adj.put(i, arr1);
-                    val.put(i, arr2);
+                    val.put(i, Integer.valueOf(matVal[i][j]));
                 }
             }
         }
@@ -199,13 +199,11 @@ public class Partie2 {
                 if (adj.containsKey(k)) {
                     Iterator<Integer> it = adj.get(k).iterator();
                     if (dist[k] != Integer.MIN_VALUE) {
-                        int i = 0;
                         while (it.hasNext()) {
                             int next = it.next();
-                            if (dist[next] < dist[k] + val.get(k).get(i)) {
-                                dist[next] = dist[k] + val.get(k).get(i);
+                            if (dist[next] < dist[k] + val.get(k)) {
+                                dist[next] = dist[k] + val.get(k);
                             }
-                            i++;
                         }
                     }
                 }
@@ -226,19 +224,17 @@ public class Partie2 {
 
             if (adj.containsKey(k)) {
                 Iterator<Integer> it = adj.get(k).iterator();
-                int i = 0;
                 boolean x = false;
                 PriorityQueue<Integer> pq = new PriorityQueue<>();
                 while (it.hasNext()) {
                     int next = it.next();
-                    if (dist[k] <= dist[next] - val.get(k).get(i)) {
-                        pq.add(dist[next] - val.get(k).get(i));
+                    if (dist[k] <= dist[next] - val.get(k)) {
+                        pq.add(dist[next] - val.get(k));
                         x = true;
                     }
-                    i++;
                 }
-                if(x){
-                   dist[k] = pq.poll();
+                if (x) {
+                    dist[k] = pq.poll();
                 }
             }
         }
@@ -247,15 +243,37 @@ public class Partie2 {
     }
 
     //les marges
-    public int[] marge(){
+    public int[] margeTotal() {
         int[] marge = new int[n];
         int[] plustot = Plustot();
-        int[] plustart = Plustard();
-        for(int i = 0; i < n;i ++){
-            marge[i] = plustart[i] - plustot[i];
+        int[] plustard = Plustard();
+        for (int i = 0; i < n; i++) {
+            marge[i] = plustard[i] - plustot[i];
         }
         return marge;
     }
+
+    public int[] margeLibre() {
+        int[] dist = Plustot();
+        Stack<Integer> stack = TopologiqueDfs();
+
+        while (!stack.isEmpty()) {
+            int k = stack.pop();
+            PriorityQueue<Integer> pq = new PriorityQueue<>();
+            if (adj.containsKey(k)) {
+                Iterator<Integer> it = adj.get(k).iterator();
+                while (it.hasNext()) {
+                    int next = it.next();
+                    pq.add(dist[next]);
+                }
+                dist[k] = pq.poll() - dist[k] - val.get(k);
+            }else
+                dist[k] = 0;//vu que sommet n'a pas de succsseur (le dernier sommet)
+            //selon moi,il y a pas de tâches postérieur a faire donc son marge libre est toujours 0.
+        }
+        return dist;
+    }
+
     private Stack<Integer> reverseStack(Stack<Integer> stack) {
         Stack<Integer> stack1 = new Stack<>();
         while (!stack.isEmpty()) {

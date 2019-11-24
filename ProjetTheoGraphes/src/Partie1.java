@@ -204,6 +204,7 @@ public class Partie1 {
 
                     // en cas que il y a plus de sommet
                     if (somme == 0) {
+                        res.append("\n");
                         res.append("Graphe vide\n");
                         res.append("Rangs calculés : \n");
                         for (int i = 0; i < s.size(); i++) {

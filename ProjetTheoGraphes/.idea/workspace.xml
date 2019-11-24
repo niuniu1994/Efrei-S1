@@ -81,21 +81,17 @@
       <workItem from="1572342525486" duration="2000" />
       <workItem from="1572893454340" duration="40000" />
       <workItem from="1573675548582" duration="5969000" />
+      <workItem from="1573736786956" duration="308000" />
+      <workItem from="1574092517355" duration="800000" />
+      <workItem from="1574363994968" duration="3321000" />
+      <workItem from="1574406614165" duration="283000" />
+      <workItem from="1574434104039" duration="1186000" />
+      <workItem from="1574435455866" duration="70000" />
+      <workItem from="1574443167141" duration="1211000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Partie1.java</url>
-          <line>183</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
