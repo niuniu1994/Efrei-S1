@@ -347,5 +347,22 @@ public class BST<E extends Comparable<E>> {
         return res.toString();
     }
 
+    public int feuille(){
+        return feuilee(root);
+    }
 
+    private int feuilee(Node node){
+        if (node == null)
+            return 0;
+        if (node.left == null && node.right == null)
+            return 1;
+        /*
+        if(node.left == null)
+            return feuilee(node.right);
+        if(node.right == null)
+            return feuilee(node.left);
+         */
+
+        return feuilee(node.left) + feuilee(node.right);
+    }
 }

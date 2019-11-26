@@ -112,7 +112,7 @@ public class AVLTree<K extends Comparable<K>, V> implements Map<K, V> {
             node.left = leftRotate(node.left);
             //即使经过左旋后以node.left为根的树并不满足AVL树的条件再经过对node的右旋后还是会的到以node为根的AVL树
             return rightRotate(node);
-        }else if (getBlanceFactor(node) < -1 && getBlanceFactor(node.right) > 0) {
+        }else if (getBlanceFactor(node) < -1 && getBlanceFactor(node.right) > 0){
             //RL情况
             node.right = rightRotate(node.right);
             //即使经过右旋后以node.right为根的树并不满足AVL树的条件再经过对node的左旋后还是会的到以node为根的AVL树
@@ -153,13 +153,6 @@ public class AVLTree<K extends Comparable<K>, V> implements Map<K, V> {
     //      / \
     //     T3 T4
     private Node leftRotate(Node y){
-
-        /*
-        Node x = y.right;
-        y.right = x.left;;
-        x.left = y;
-        */
-
         Node x = y.right;
         Node T2 = x.left;
 

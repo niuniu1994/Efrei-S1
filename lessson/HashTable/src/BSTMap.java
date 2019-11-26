@@ -1,85 +1,36 @@
-import java.awt.*;
+public class BSTMap<K extends Comparable<K>, V> implements Map<K, V> {
 
-public class RBTree<K extends Comparable<K>, V>{
-
-    private static final boolean RED = true;
-    private static final boolean BLACK = false;
-
-    private class Node{
+    private class Node {
         public K key;
         public V val;
         public Node left, right;
-        public boolean color;
 
         public Node(K key, V val) {
             this.key = key;
             this.val = val;
             left = null;
             right = null;
-            color = RED;
         }
     }
 
     private Node root;
     private int size;
 
-    public boolean isRed(Node node){
-        if (node == null){
-            return BLACK;
-        }
-        return node.color;
-    }
-
-    public RBTree() {
+    public BSTMap() {
         size = 0;
         root = null;
     }
 
 
+    @Override
     public void add(K key, V value) {
         root = add(key, value, root);
-        root.color = BLACK;//根结点必然是红色
-    }
-
-    //左旋转,主要目的是保持红节点的左倾
-    //   node                     x
-    //  /   \     左旋转         /  \
-    // T1   x   --------->   node   T3
-    //     / \              /   \
-    //    T2 T3            T1   T2
-    private Node leftRotate(Node node){
-        Node x = node.right;
-        node.right = x.left;
-        x.left = node;
-        x.color = node.color;
-        node.color = RED;
-        return x;
-    }
-
-    //     node                   x
-    //    /   \     右旋转       /  \
-    //   x    T2   ------->   y   node
-    //  / \                       /  \
-    // y  T1                     T1  T2
-    private Node rightRotate(Node node){
-        Node x = node.left;
-        node.left = x.right;
-        x.right = node;
-        x.color = node.color;
-        node.color = RED;
-        return x;
-    }
-
-    private void flipcolors(Node node){
-        node.color = RED;
-        node.left.color = BLACK;
-        node.right.color = BLACK;
     }
 
     private Node add(K key, V val, Node node) {
         if (node == null) {
             size++;
-            return new Node(key, val);//默认插入红色节点
+            return new Node(key, val);
         }
         if (key.compareTo(node.key) < 0)
             node.left = add(key, val, node.left);
@@ -87,14 +38,6 @@ public class RBTree<K extends Comparable<K>, V>{
             node.right = add(key, val, node.right);
         else if (key.equals(node.key))
             node.val = val;
-
-        if (isRed(node.right) && !isRed(node.left))
-            node = leftRotate(node);
-        if (isRed(node.left) && isRed(node.left.left))
-            node = rightRotate(node);
-        if (isRed(node.left) && isRed(node.right))
-            flipcolors(node);
-
         return node;
     }
 
@@ -119,6 +62,7 @@ public class RBTree<K extends Comparable<K>, V>{
 
     //删除键为key的节点
 
+    @Override
     public V remove(K key) {
         Node node = getNode(root, key);
         if (node != null) {
@@ -180,20 +124,24 @@ public class RBTree<K extends Comparable<K>, V>{
         return node;
     }
 
+    @Override
     public boolean contains(K key) {
         return getNode(root, key) != null ? true : false;
     }
 
     //返回value值
+    @Override
     public V get(K key) {
         Node node = getNode(root, key);
         return node == null ? null : node.val;
     }
 
+    @Override
     public int getSize() {
         return size;
     }
 
+    @Override
     public void set(K key, V val) {
         Node node = getNode(root, key);
         if (node == null)
@@ -201,6 +149,7 @@ public class RBTree<K extends Comparable<K>, V>{
         node.val = val;
     }
 
+    @Override
     public boolean isEmpty() {
         return size == 0;
     }

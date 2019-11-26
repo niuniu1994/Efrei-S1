@@ -67,7 +67,7 @@ public class Array<E> {
 		data[size] = null;//loitering objects游荡的对象
 		size--;
 		
-		if(size <= data.length/4) {//为了避免复杂度震荡我们除于4而不是2 ，我们采用lazy的策略而不是激进的侧罗
+		if(size <= data.length/4) {//为了避免复杂度震荡我们除于4而不是2 ，我们采用lazy的策略而不是激进的策略
 			resize(data.length/2);
 		}
 		

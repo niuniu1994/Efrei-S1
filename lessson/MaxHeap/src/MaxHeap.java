@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class MaxHeap<E extends Comparable<E>> {
 
     Array<E> data;

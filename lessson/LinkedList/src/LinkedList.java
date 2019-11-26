@@ -204,4 +204,6 @@ public class LinkedList<E> {
 		res.append(""null");*/
 		return res.toString();
 	}
+
+
 }

@@ -7,6 +7,7 @@ public class Main {
         BST<Integer> bst = new BST<>();
         Random random = new Random();
 
+        /*
         for(int i = 0;i < 100;i++){
             bst.add(random.nextInt(1000));
         }
@@ -18,5 +19,12 @@ public class Main {
         }
 
         System.out.println(arrayList);
+         */
+
+        for (int i = 0; i < 10; i++) {
+            bst.add(random.nextInt(8));
+        }
+        System.out.println(bst.toString());
+        System.out.println(bst.feuille());
     }
 }
